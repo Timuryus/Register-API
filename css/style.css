@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  background-color: grey;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.row {
+  border: 2px solid gray;
+  padding: 25px 25px;
+  height: 320px;
+  width: 320px;
+  border-radius: 10px;
+  background-color: darkblue;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+.inputs input {
+  padding: 15px 20px;
+  font-size: 18px;
+  margin: 15px 5px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid gray;
+}
+.btn {
+  width: 90%;
+  text-align: center;
+  margin: 15px auto;
+}
+.btn button {
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid gold;
+  outline: none;
+  padding: 15px 20px;
+  background-color: transparent;
+  font-size: 18px;
+  box-shadow: 2px 2px 1px black;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.row h1 {
+  margin: 0;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 15px;
+}
+
+.btn button:hover {
+  background-color: white;
+  color: black;
+}
+
+.inputs input.active {
+  border: 2px solid red;
+}
+
+.error {
+  position: absolute;
+  top: 5rem;
+  left: 43%;
+}
+
+.error p {
+  width: 100%;
+  font-size: 28px;
+  font-weight: 900;
+  color: red;
+  text-shadow: 1px 1px 1px black;
+}
+
+.auth a {
+  text-decoration: none;
+  margin: 0;
+  position: fixed;
+  color: gray;
+  bottom: 34%;
+  left: 44.7%;
+}
